@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Blur transition plugin for Svelte 3",
     "main": "index.js",
-    "module": "module.js",
+    "module": "index.mjs",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "rollup -c",
@@ -12,7 +12,7 @@
     },
     "files": [
         "index.js",
-        "module.js"
+        "index.mjs"
     ],
     "repository": {
         "type": "git",
