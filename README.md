@@ -14,7 +14,7 @@ Then import the plugin to your Svelte component.
 
 ```html
 <label>
-	<input bind:checked={visible} type=checkbox> show
+  <input bind:checked={visible} type=checkbox> show
 </label>
 
 {#if visible}
@@ -35,32 +35,32 @@ As with most transitions, you can specify `delay` and `duration` parameters (bot
 
 ```html
 <label>
-	<input bind:checked={visible} type=checkbox> show
+  <input bind:checked={visible} type=checkbox> show
 </label>
 
 {#if visible}
 <img 
-	transition:blur={{ 
-		delay: 100, 
-		duration: 1000, 
-		easing: quintOut, 
-		inverse: true, 
-		radius: 5 
-	}} 
-	src="https://v3.svelte.technology/logo.svg" 
-	width="200"
+  transition:blur={{ 
+    delay: 100, 
+    duration: 1000, 
+    easing: quintOut, 
+    inverse: true, 
+    radius: 5 
+  }} 
+  src="https://v3.svelte.technology/logo.svg" 
+  width="200"
 >
 {/if}
 
 <script>
   import blur from 'svelte-transitions-blur';
-	import { quintOut } from 'svelte/easing';
+  import { quintOut } from 'svelte/easing';
 
   let visible = false;
 </script>
 
 <style>
-	img { filter: blur(5px); }
+  img { filter: blur(5px); }
 </style>
 ```
 [demo](https://v3.svelte.technology/repl?version=3.0.0-alpha17&gist=eb4f75471b38a4970fdb033cda38b0b9)
